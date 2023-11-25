@@ -1,8 +1,8 @@
-import { Roboto } from 'next/font/google';
+import { Exo } from 'next/font/google';
 import { createTheme } from '@mui/material/styles';
 import { type ThemeOptions } from "@mui/material/styles/createTheme";
 
-const roboto = Roboto({
+const exo = Exo({
   weight: ['300', '400', '500', '700'],
   subsets: ['latin'],
   display: 'swap',
@@ -10,7 +10,7 @@ const roboto = Roboto({
 
 const customTheme: Omit<ThemeOptions, "palette"> = {
   typography: {
-    fontFamily: roboto.style.fontFamily,
+    fontFamily: exo.style.fontFamily,
   },
 }
 
